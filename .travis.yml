@@ -1,0 +1,9 @@
+
+language: swift
+osx_image: xcode14.3.1
+xcode_workspace: Lixi.xcworkspace
+xcode_scheme: Lixi
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+before_install:
+  - bundle install
+  - bundle exec pod install --repo-update
